@@ -66,7 +66,7 @@ These models are implemented in Keras, and the environment setting is:
 * Keras-gpu 2.2.4
 
 # Remarks
-You will need to download the appropriate dataset and change the flie path to the corresponding dataset in your code. There is no guarantee that the code will run under other environmental configurations, but there may be performance differences due to different hardware conditions.
+You will need to download the appropriate dataset and change the flie path to the corresponding dataset in your code. There is no guarantee that the code can run sucessfully under other environmental configurations, but there may be performance differences due to different hardware conditions.
 
 # Acknowledgement
 Our code is partly based on [leena201818](https://github.com/leena201818). Thanks [leena201818](https://github.com/leena201818) and [wzjialang](https://github.com/wzjialang/MCLDNN#introduction) for their great work!
