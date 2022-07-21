@@ -3,7 +3,7 @@ Source code for the paper "Deep Learning Based Automatic Modulation Recognition:
 
 Representative and up-to-date models in the AMR field are implemented on four different datasets (RML2016.10a, RML2016.10b, RML2018.01a, HisarMod2019.1), providing a unified reference for interested researchers.
 
-The article is available here:[Deep Learning Based Automatic Modulation Recognition: Models, Datasets, and Challenges]()
+The article is available here:[Deep Learning Based Automatic Modulation Recognition: Models, Datasets, and Challenges](https://www.sciencedirect.com/science/article/pii/S1051200422002676?via%3Dihub)
 
 If you have any question, please contact e-mail: zhangxx8023@gmail.com
 
@@ -74,3 +74,12 @@ Our code is partly based on [leena201818](https://github.com/leena201818). Thank
 # Citation
 Please cite the literature we refer to if they are helpful to your work.
 If our work is helpful to your research, please cite:
+@article{ZHANG2022103650,
+author = {Fuxin Zhang and Chunbo Luo and Jialang Xu and Yang Luo and FuChun Zheng},
+title = {Deep Learning Based Automatic Modulation Recognition: Models, Datasets, and Challenges},
+journal = {Digital Signal Processing},
+pages = {103650},
+year = {2022},
+issn = {1051-2004},
+doi = {https://doi.org/10.1016/j.dsp.2022.103650}
+}
