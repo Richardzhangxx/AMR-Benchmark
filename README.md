@@ -51,7 +51,7 @@ scenario with precoding. Finally, existing challenges and possible future resear
 |DenseNet|[Deep neural network architectures for modulation classification](https://ieeexplore.ieee.org/abstract/document/8335483)    |  2017  |
 |GRU| [Automatic Modulation Classification using Recurrent Neural Networks](https://ieeexplore.ieee.org/abstract/document/8322633)  | 2017   |
 |LSTM|[Deep Learning Models for Wireless Signal Classification With Distributed Low-Cost Spectrum Sensors](https://ieeexplore.ieee.org/abstract/document/8357902)  |   2018 |
-|DAE|[Real-Time Radio Technology and Modulation Classification via an LSTM Auto-Encoder](https://ieeexplore.ieee.org/abstract/document/9487492)   | 2022   |
+|DAE|[Real-Time Radio Technology and Modulation Classification via an LSTM Auto-Encoder](https://ieeexplore.ieee.org/abstract/document/9487492)| 2022   |
 |MCLDNN| [A Spatiotemporal Multi-Channel Learning Framework for Automatic Modulation Recognition](https://ieeexplore.ieee.org/abstract/document/9106397)  | 2020   |
 |CLDNN|[Deep Architectures for Modulation Recognition](https://ieeexplore.ieee.org/abstract/document/7920754) |2017    |
 |CLDNN2|[Deep neural network architectures for modulation classification](https://ieeexplore.ieee.org/abstract/document/8335483)    |  2017  |
@@ -67,6 +67,8 @@ These models are implemented in Keras, and the environment setting is:
 
 # Remarks
 You will need to download the appropriate dataset and change the flie path to the corresponding dataset in your code. There is no guarantee that the code can run sucessfully under other environmental configurations, but there may be performance differences due to different hardware conditions.
+
+About DAE: In the author's open source code, decoder uses the TimeDistributed layer. In our implementation, decoder unfolds the data and uses a fully connected layer to reconstruct the input, so the difference is described here. [(Source code for DAE)](https://github.com/WuLoli/LSTMDAE)  
 
 # Acknowledgement
 Our code is partly based on [leena201818](https://github.com/leena201818). Thanks [leena201818](https://github.com/leena201818) and [wzjialang](https://github.com/wzjialang/MCLDNN#introduction) for their great work!
