@@ -17,16 +17,15 @@ scenario with precoding. Finally, existing challenges and possible future resear
 # Content
 ## Experimental comparison for SISO system
 ### Accuracy
-
-![Recognition accuracy comparison of the state-of-the-art models on (a) RML2016.10a, (b) RML2016.10b, (c) RML2018.01a, (d) HisarMod2019.1](https://user-images.githubusercontent.com/56213845/179749467-e08a9561-aec5-4741-8e72-1ae8b026638e.png)
+![Recognition accuracy comparison of the state-of-the-art models on (a) RML2016.10a, (b) RML2016.10b, (c) RML2018.01a, (d) HisarMod2019.1](https://user-images.githubusercontent.com/56213845/200261454-dda0332e-6134-49de-b89f-cf543f56bac9.png)
 **Fig.1** Recognition accuracy comparison of the state-of-the-art models on (a) RML2016.10a, (b) RML2016.10b, (c) RML2018.01a, (d) HisarMod2019.1.
 
 ### Parameter Comparison
 **Table1** Model size and complexity comparison on the four datasets (A: RML2016.10a, B: RML2016.10b, C: RML2018.01a, D: HisarMod2019.1).
-![1658233618155](https://user-images.githubusercontent.com/56213845/179749943-6b74c23d-dbff-4aef-9d4d-e0f3c8eb7993.png)
+![1667809469605](https://user-images.githubusercontent.com/56213845/200261347-2d5c9b07-ef30-4b48-a31b-881837ca57da.png)
 
 ### Confusion matrix
-![combine_revise2022512](https://user-images.githubusercontent.com/56213845/179750124-235922ad-f4e6-457f-937a-7b3466d921d9.png)
+![combine_revise2022512_r](https://user-images.githubusercontent.com/56213845/200261599-1754b267-7d7d-4ea0-beb7-a06264053686.jpg)
 **Fig.2** Confusion matrices. A, B and C represent the confusion matrices obtained on the RML2016.10a, RML2016.10b, and RML2018.01a, respectively. The numerical indexes 1 - 14 denote CNN1, CNN2, MCNET, IC-AMCNET, ResNet, DenseNet, GRU, LSTM, DAE, MCLDNN, CLDNN, CLDNN2, CGDNet, PET-CGDNN.
 
 # Dataset
@@ -68,7 +67,7 @@ These models are implemented in Keras, and the environment setting is:
 # Remarks
 You will need to download the appropriate dataset and change the flie path to the corresponding dataset in your code. There is no guarantee that the code can run sucessfully under other environmental configurations, but there may be performance differences due to different hardware conditions.
 
-About DAE: In the author's open source code, decoder uses the TimeDistributed layer. In our implementation, decoder unfolds the data and uses a fully connected layer to reconstruct the input, so the difference is described here. [(Source code for DAE)](https://github.com/WuLoli/LSTMDAE)  
+About DAE: In the author's open source code, decoder uses the TimeDistributed layer. In our initial implementation, decoder unfolds the data and uses a fully connected layer to reconstruct the input, so the difference is described here. [(Source code for DAE)](https://github.com/WuLoli/LSTMDAE)  We updated the DAE source code and experimental results with TimeDistributed layer as decoder in our website.
 
 # Acknowledgement
 Our code is partly based on [leena201818](https://github.com/leena201818). Thanks [leena201818](https://github.com/leena201818) and [wzjialang](https://github.com/wzjialang/MCLDNN#introduction) for their great work!
